@@ -1,0 +1,188 @@
+:root {
+  /* ==========================
+     Primary Colors
+  ========================== */
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  /* ==========================
+     Text
+  ========================== */
+  --secondary-color: #0f172a;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+
+  /* ==========================
+     Backgrounds
+  ========================== */
+
+  /* Full page gradient */
+  --background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fbff 35%,
+    #eef6ff 70%,
+    #ffffff 100%
+  );
+
+  --card-bg: #ffffff;
+  --navbar-bg: rgba(255, 255, 255, 0.9);
+
+  /* ==========================
+     Borders
+  ========================== */
+  --border-color: #e5e7eb;
+
+  /* ==========================
+     Badges
+  ========================== */
+  --badge-bg: #eef3ff;
+  --tag-bg: rgba(22, 119, 255, 0.08);
+  --status-bg: #eff6ff;
+
+  /* ==========================
+     Inputs
+  ========================== */
+  --input-bg: #ffffff;
+  --input-border: #d9d9d9;
+  --focus-shadow: rgba(22, 119, 255, 0.12);
+
+  /* ==========================
+     Footer
+  ========================== */
+  --footer-bg: #0f172a;
+  --footer-heading: #ffffff;
+  --footer-text: #cbd5e1;
+  --footer-muted: #94a3b8;
+
+  /* ==========================
+     Shadows
+  ========================== */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* ==========================
+     Layout
+  ========================== */
+  --container-width: 1200px;
+
+  /* ==========================
+     Radius
+  ========================== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* ==========================
+     Transition
+  ========================== */
+  --transition: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  /* ==========================
+     Primary Colors
+  ========================== */
+  --primary-color: #3b82f6;
+  --primary-hover: #60a5fa;
+
+  /* ==========================
+     Text
+  ========================== */
+  --secondary-color: #f8fafc;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+
+  /* ==========================
+     Backgrounds
+  ========================== */
+
+  /* Full page gradient */
+  --background: linear-gradient(180deg, #020617 0%, #07142d 45%, #0f172a 100%);
+
+  --card-bg: #0f172a;
+  --navbar-bg: rgba(2, 6, 23, 0.85);
+
+  /* ==========================
+     Borders
+  ========================== */
+  --border-color: #334155;
+
+  /* ==========================
+     Badges
+  ========================== */
+  --badge-bg: #1e3a8a;
+  --tag-bg: rgba(59, 130, 246, 0.15);
+  --status-bg: rgba(59, 130, 246, 0.15);
+
+  /* ==========================
+     Inputs
+  ========================== */
+  --input-bg: #0f172a;
+  --input-border: #334155;
+  --focus-shadow: rgba(59, 130, 246, 0.25);
+
+  /* ==========================
+     Footer
+  ========================== */
+  --footer-bg: #0f172a;
+  --footer-heading: #ffffff;
+  --footer-text: #e2e8f0;
+  --footer-muted: #94a3b8;
+
+  /* ==========================
+     Shadows
+  ========================== */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+/* ==========================
+   Global Styles
+========================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+
+  color: var(--text-primary);
+
+  background: var(--background);
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
