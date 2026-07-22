@@ -224,7 +224,6 @@ function Contact() {
                 name="name"
                 placeholder="Enter your name"
                 autoComplete="name"
-                autoFocus
                 value={formData.name}
                 onChange={handleChange}
                 disabled={isSending}
