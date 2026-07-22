@@ -8,6 +8,7 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 import profile from "../../data/profile";
 
 import profileImage from "../../assets/images/profile.png";
+import AnimatedStatus from "./AnimatedStatus";
 
 function Hero() {
   return (
@@ -15,7 +16,7 @@ function Hero() {
       <div className="container">
         <div className="hero-wrapper">
           <div className="hero-content">
-            <p className="hero-status">🟢 Available for opportunities</p>
+            <AnimatedStatus />
 
             <h1 className="hero-title">
               Hi, I'm <span>{profile.name}</span>
