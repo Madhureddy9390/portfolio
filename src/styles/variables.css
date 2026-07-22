@@ -16,14 +16,17 @@
      Backgrounds
   ========================== */
 
-  --background-color: #f8fbff;
-  --background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f8fbff 35%,
-    #eef6ff 70%,
-    #ffffff 100%
-  );
+   --background-color: #f8fbff;
+   --background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f8fbff 35%,
+      #eef6ff 70%,
+      #ffffff 100%
+   );
+
+   /* Status pill width (used by AnimatedStatus) */
+   --status-width: 210px;
 
   --card-bg: #ffffff;
   --navbar-bg: rgba(255, 255, 255, 0.9);

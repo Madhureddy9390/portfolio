@@ -1,9 +1,10 @@
 .hero-status {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 
-  padding: 7px 14px; /* Reduced */
+  padding: 7px 14px;
 
   border-radius: 999px;
 
@@ -13,11 +14,12 @@
 
   color: var(--primary-color);
 
-  font-size: 14px; /* Reduced */
+  font-size: 14px;
 
   font-weight: 600;
 
-  overflow: hidden;
+  overflow: visible;
+  max-width: 100%;
 }
 
 .status-dot {
@@ -36,20 +38,41 @@
 .status-text {
   position: relative;
 
-  height: 20px; /* Reduced */
+  height: 20px;
 
-  min-width: 210px; /* Reduced */
+  /* allow the container to flex down on narrow viewports */
+  width: var(--status-width);
+  min-width: 120px;
+  max-width: 100%;
 
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  padding: 0 6px;
 
   overflow: hidden;
 }
 
 .status-text span {
-  position: absolute;
-
+  /* keep the animated element inline so motion transforms aren't clipped */
+  position: relative;
+  display: inline-block;
   white-space: nowrap;
+  padding: 0 4px;
+  will-change: transform, opacity;
+}
+
+@media (max-width: 576px) {
+  .hero-status {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .status-text {
+    min-width: 0;
+    width: calc(var(--status-width) * 0.75);
+  }
 }
 
 @keyframes pulse {
