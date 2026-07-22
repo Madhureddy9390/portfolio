@@ -15,9 +15,9 @@ function AnimatedStatus() {
   const [isDeleting, setIsDeleting] = useState(false);
   const mounted = useRef(true);
 
-  const TYPING_SPEED = 60;
-  const DELETING_SPEED = 40;
-  const PAUSE_AFTER_COMPLETE = 1200;
+  const TYPING_SPEED = 20;
+  const DELETING_SPEED = 20;
+  const PAUSE_AFTER_COMPLETE = 1000;
 
   useEffect(() => {
     mounted.current = true;
