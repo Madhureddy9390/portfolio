@@ -24,7 +24,7 @@
     #eef6ff 70%,
     #ffffff 100%
   );
-  
+
   /* Status pill width (used by AnimatedStatus) */
   --status-width: 210px;
 
@@ -81,11 +81,11 @@
   ========================== */
   --transition: 0.3s ease;
 
-   /* Hero / status sizing */
-   --status-width: 220px;
-   --hero-image-height-desktop: 500px;
-   --hero-image-height-tablet: 420px;
-   --hero-image-height-mobile: 360px;
+  /* Hero / status sizing */
+  --status-width: 220px;
+  --hero-image-height-desktop: 400px;
+  --hero-image-height-tablet: 350px;
+  --hero-image-height-mobile: 150px;
 }
 
 [data-theme="dark"] {

@@ -1,7 +1,7 @@
 const profile = {
   name: "Madhu Balu",
 
-  role: "Frontend React Developer",
+  role: "React Frontend Developer",
 
   email: "madhureddy.balu@gmail.com",
   phone: "+91 9390532834",
