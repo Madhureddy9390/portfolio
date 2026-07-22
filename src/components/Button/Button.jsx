@@ -1,4 +1,5 @@
 import "./Button.css";
+import { LoadingOutlined } from "@ant-design/icons";
 
 function Button({
   children,
@@ -10,6 +11,8 @@ function Button({
   download,
   onClick,
   disabled = false,
+  loading = false,
+  ...props
 }) {
   const classes = `btn btn-${variant}`;
 
@@ -21,6 +24,7 @@ function Button({
         target={target}
         rel={rel}
         download={download}
+        {...props}
       >
         {children}
       </a>
@@ -32,8 +36,12 @@ function Button({
       type={type}
       className={classes}
       onClick={onClick}
-      disabled={disabled}
+      disabled={disabled || loading}
+      aria-busy={loading}
+      {...props}
     >
+      {loading && <LoadingOutlined spin style={{ marginRight: "8px" }} />}
+
       {children}
     </button>
   );
