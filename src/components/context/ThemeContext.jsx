@@ -3,9 +3,15 @@ import { ThemeContext } from "./ThemeContext";
 
 export default function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
+    if (typeof window === "undefined") {
+      return "light";
+    }
 
-    if (savedTheme) return savedTheme;
+    const savedTheme = window.localStorage.getItem("theme");
+
+    if (savedTheme === "dark" || savedTheme === "light") {
+      return savedTheme;
+    }
 
     return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
@@ -13,8 +19,13 @@ export default function ThemeProvider({ children }) {
   });
 
   useEffect(() => {
+    if (typeof document === "undefined") {
+      return;
+    }
+
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
+    document.documentElement.style.colorScheme = theme;
+    window.localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {

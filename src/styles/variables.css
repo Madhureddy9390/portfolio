@@ -16,7 +16,7 @@
      Backgrounds
   ========================== */
 
-  /* Full page gradient */
+  --background-color: #f8fbff;
   --background: linear-gradient(
     180deg,
     #ffffff 0%,
@@ -97,7 +97,7 @@
      Backgrounds
   ========================== */
 
-  /* Full page gradient */
+  --background-color: #020617;
   --background: linear-gradient(180deg, #020617 0%, #07142d 45%, #0f172a 100%);
 
   --card-bg: #0f172a;
@@ -152,10 +152,14 @@ body {
 
   color: var(--text-primary);
 
-  background: var(--background);
+  background-color: var(--background-color);
+  background-image: var(--background);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   transition:
-    background 0.4s ease,
+    background-color 0.4s ease,
+    background-image 0.4s ease,
     color 0.4s ease;
 
   min-height: 100vh;
@@ -163,6 +167,16 @@ body {
   -webkit-font-smoothing: antialiased;
 
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+#root {
+  background: transparent;
 }
 
 *,
