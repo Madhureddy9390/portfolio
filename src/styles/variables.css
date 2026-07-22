@@ -16,17 +16,17 @@
      Backgrounds
   ========================== */
 
-   --background-color: #f8fbff;
-   --background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #f8fbff 35%,
-      #eef6ff 70%,
-      #ffffff 100%
-   );
-
-   /* Status pill width (used by AnimatedStatus) */
-   --status-width: 210px;
+  --background-color: #f8fbff;
+  --background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fbff 35%,
+    #eef6ff 70%,
+    #ffffff 100%
+  );
+  
+  /* Status pill width (used by AnimatedStatus) */
+  --status-width: 210px;
 
   --card-bg: #ffffff;
   --navbar-bg: rgba(255, 255, 255, 0.9);
@@ -80,6 +80,12 @@
      Transition
   ========================== */
   --transition: 0.3s ease;
+
+   /* Hero / status sizing */
+   --status-width: 220px;
+   --hero-image-height-desktop: 500px;
+   --hero-image-height-tablet: 420px;
+   --hero-image-height-mobile: 360px;
 }
 
 [data-theme="dark"] {

@@ -45,11 +45,23 @@
 
 .hero-image img {
   width: 100%;
-  height: 500px;
+  height: var(--hero-image-height-desktop);
 
   object-fit: cover;
 
   display: block;
+}
+
+@media (max-width: 992px) {
+  .hero-image img {
+    height: var(--hero-image-height-tablet);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image img {
+    height: var(--hero-image-height-mobile);
+  }
 }
 
 .hero-image-info {
