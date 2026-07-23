@@ -1,6 +1,6 @@
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 32px;
 }
 
@@ -133,4 +133,35 @@
 
     padding: 7px 14px;
   }
+}
+.live-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 24px;
+
+  width: fit-content;
+
+  color: var(--primary-color);
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.live-demo:hover {
+  color: var(--secondary-color);
+}
+
+.live-demo .anticon {
+  font-size: 14px;
+
+  transition: transform 0.3s ease;
+}
+
+.live-demo:hover .anticon {
+  transform: translate(3px, -3px);
 }

@@ -1,38 +1,40 @@
 const projects = [
   {
     id: 1,
-    category: "ENTERPRISE • REACT + REDUX TOOLKIT",
+    category: "PROFESSIONAL EXPERIENCE",
+
     title: "Advertising Marketplace Platform",
+
     description:
-      "Multi-role marketplace with Buyer, Seller, Admin and Sales dashboards. Features campaign management, product discovery, URL-based Redux state hydration and approval workflows.",
-    technologies: ["React.js", "Redux Toolkit", "REST APIs", "Ant Design"],
+      "Developed and maintained a production-scale advertising marketplace supporting Buyer, Seller, Admin and Sales workflows. Built reusable React components, integrated REST APIs, implemented Redux Toolkit state management, reservation workflows, Google Maps integration and AI-powered chatbot features.",
+
+    technologies: [
+      "React.js",
+      "Redux Toolkit",
+      "REST APIs",
+      "Ant Design",
+      "Google Maps API",
+    ],
+    liveDemo: null,
   },
 
   {
     id: 2,
-    category: "FEATURE SYSTEM",
-    title: "Reservation & Inventory Booking",
-    description:
-      "Implemented reservation workflow with booking validation, availability checks, reservation timers and dynamic pricing for billboard inventory.",
-    technologies: ["React.js", "Redux Toolkit", "REST APIs", "JavaScript"],
-  },
+    category: "PERSONAL PROJECT",
 
-  {
-    id: 3,
-    category: "MAP INTEGRATION",
-    title: "Location Discovery with Google Maps",
-    description:
-      "Integrated Google Maps JavaScript API with Places Autocomplete, custom markers and geolocation for location-based product discovery.",
-    technologies: ["React.js", "Google Maps API", "Geolocation"],
-  },
+    title: "React Portfolio Website",
 
-  {
-    id: 4,
-    category: "AI EXPERIENCE",
-    title: "AI-Powered Chatbot Integration",
     description:
-      "Integrated AI chatbot with dynamic conversation flow, REST APIs, Redux state management and contextual navigation across the application.",
-    technologies: ["React.js", "REST APIs", "Redux"],
+      "Designed and developed a fully responsive portfolio to showcase professional experience, technical skills and featured work. Implemented reusable React components, dark/light theme with persistent user preferences, smooth navigation and EmailJS contact functionality.",
+
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "CSS3",
+      "EmailJS",
+      "Responsive Design",
+    ],
+    liveDemo: "https://portfolio-pink-psi-25.vercel.app/",
   },
 ];
 

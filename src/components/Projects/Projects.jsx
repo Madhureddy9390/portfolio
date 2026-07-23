@@ -5,11 +5,15 @@ import Section from "../Section/Section";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
 import projects from "../../data/projects";
+import { ExportOutlined } from "@ant-design/icons";
 
 function Projects() {
   return (
     <Section id="projects">
-      <SectionHeading subtitle="Projects" title="Featured Work" />
+      <SectionHeading
+        subtitle="Featured Work"
+        title="Professional & Personal Projects"
+      />
 
       <div className="projects-grid">
         {projects.map((project) => (
@@ -27,6 +31,16 @@ function Projects() {
                 </span>
               ))}
             </div>
+            {project.liveDemo && (
+              <a
+                href={project.liveDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="live-demo"
+              >
+                Live Demo <ExportOutlined />
+              </a>
+            )}
           </Card>
         ))}
       </div>
