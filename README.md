@@ -1,5 +1,6 @@
 # Personal Portfolio Website
 
+![Portfolio Preview](./public/portfolio-preview.png)
 A modern, responsive portfolio website built with **React.js** to showcase my professional experience, technical skills, featured work, and contact information. The application focuses on clean UI, accessibility, reusable components, and a seamless user experience across desktop, tablet, and mobile devices.
 
 ## Live Demo
