@@ -34,16 +34,17 @@
 .btn-primary:hover {
   background: var(--primary-hover);
 }
-
 .btn-secondary {
   background: var(--card-bg);
-
   color: var(--text-primary);
-
   border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
   box-shadow: 0 8px 24px rgba(0, 123, 255, 0.18);
 }
 

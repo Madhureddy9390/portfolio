@@ -7,6 +7,7 @@ import {
   ApiOutlined,
   ToolOutlined,
   DeploymentUnitOutlined,
+  ClusterOutlined,
 } from "@ant-design/icons";
 import Card from "../Card/Card";
 import Section from "../Section/Section";
@@ -17,7 +18,7 @@ import skills from "../../data/skills";
 const iconMap = {
   code: <CodeOutlined />,
   frontend: <AppstoreOutlined />,
-  state: <DatabaseOutlined />,
+  state: <ClusterOutlined />,
   api: <ApiOutlined />,
   tools: <ToolOutlined />,
   web: <DeploymentUnitOutlined />,
@@ -25,12 +26,14 @@ const iconMap = {
 function Skills() {
   return (
     <Section id="skills">
-      <SectionHeading subtitle="Skills" title="Tools I work with" />
+      <SectionHeading subtitle="Skills" title="Technologies I Build With" />
 
       <div className="skills-grid">
         {skills.map((category) => (
           <Card key={category.id} className="skill-card">
-            <div className="skill-icon">{iconMap[category.icon]}</div>
+            <div className="skill-icon" aria-hidden="true">
+              {iconMap[category.icon]}
+            </div>
 
             <h3>{category.title}</h3>
 

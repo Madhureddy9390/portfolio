@@ -1,11 +1,3 @@
-.footer {
-  margin-top: 100px;
-
-  background: var(--footer-bg);
-
-  color: var(--text-primary);
-}
-
 .footer-top {
   display: grid;
 
@@ -107,10 +99,6 @@
     font-size: 18px;
   }
 }
-.footer {
-  margin-top: 100px;
-  background: var(--footer-bg);
-}
 
 .footer-about h2,
 .footer-links h3,
@@ -133,4 +121,9 @@
 
 .footer-bottom {
   color: var(--footer-muted);
+}
+.footer {
+  margin-top: 60px;
+  background: var(--footer-bg);
+  color: var(--text-primary);
 }

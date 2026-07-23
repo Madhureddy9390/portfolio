@@ -11,6 +11,7 @@ import {
   GithubOutlined,
   LinkedinOutlined,
   SendOutlined,
+  FilePdfOutlined,
 } from "@ant-design/icons";
 
 import Section from "../Section/Section";
@@ -124,7 +125,7 @@ function Contact() {
     <Section id="contact">
       <SectionHeading
         title="Get In Touch"
-        subtitle="Have a project in mind or want to discuss an opportunity? Feel free to reach out."
+        subtitle="Let's build something great. I'm open to frontend and React engineering opportunities, freelance work, and meaningful collaborations."
       />
 
       <div className="contact-container">
@@ -158,26 +159,22 @@ function Contact() {
               </div>
             </Card>
           </a>
-
           <a
-            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              profile.location,
-            )}`}
+            href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card-link"
-            aria-label="Open Location in Google Maps"
+            aria-label="Open LinkedIn Profile"
           >
             <Card className="contact-card">
-              <EnvironmentOutlined className="contact-icon" />
+              <LinkedinOutlined className="contact-icon" />
 
               <div>
-                <h3>Location</h3>
-                <p>{profile.location}</p>
+                <h3>LinkedIn</h3>
+                <p>Connect with Me</p>
               </div>
             </Card>
           </a>
-
           <a
             href={profile.github}
             target="_blank"
@@ -194,20 +191,18 @@ function Contact() {
               </div>
             </Card>
           </a>
-
           <a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={profile.resume}
+            download
             className="contact-card-link"
-            aria-label="Open LinkedIn Profile"
+            aria-label="Download Resume"
           >
             <Card className="contact-card">
-              <LinkedinOutlined className="contact-icon" />
+              <FilePdfOutlined className="contact-icon" />
 
               <div>
-                <h3>LinkedIn</h3>
-                <p>Connect with Me</p>
+                <h3>Resume</h3>
+                <p>Download Resume</p>
               </div>
             </Card>
           </a>

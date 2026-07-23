@@ -30,7 +30,7 @@ const skills = [
     id: 4,
     title: "API Integration",
     icon: "api",
-    items: ["REST APIs", "Axios", "GraphQL", "JSON"],
+    items: ["REST APIs", "Axios", "JSON", "GraphQL Basics"],
   },
 
   {

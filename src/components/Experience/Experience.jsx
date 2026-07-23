@@ -5,6 +5,7 @@ import {
   EnvironmentOutlined,
   ApartmentOutlined,
   CheckCircleFilled,
+  BankOutlined,
 } from "@ant-design/icons";
 
 import Card from "../Card/Card";
@@ -17,8 +18,8 @@ function Experience() {
   return (
     <Section id="experience">
       <SectionHeading
-        subtitle="Where I've Worked"
-        title="Professional Experience"
+        title="Where I've Worked"
+        subtitle="Professional Experience"
       />
 
       <div className="experience-list">
@@ -27,7 +28,7 @@ function Experience() {
             <div className="experience-header">
               <div className="experience-company">
                 <div className="company-name">
-                  <ApartmentOutlined />
+                  <BankOutlined />
 
                   <span>{item.company}</span>
                 </div>

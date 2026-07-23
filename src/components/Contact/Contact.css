@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 24px;
+  padding: 1px 30px;
   cursor: pointer;
 
   transition:
@@ -44,7 +44,7 @@
 
 .contact-card-link:hover .contact-card {
   transform: translateY(-6px);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .contact-card-link:focus-visible .contact-card {
@@ -100,7 +100,7 @@
 }
 
 .form-group label {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: var(--text-primary);
   font-weight: 600;
 }
@@ -190,7 +190,7 @@
 ========================== */
 
 .contact-form-card .btn {
-  align-self: flex-start;
+  align-self: center;
 }
 
 .contact-form-card .btn:disabled {
@@ -230,7 +230,7 @@
   }
 
   .contact-card {
-    padding: 20px;
+    padding: 18px 20px;
     gap: 16px;
   }
 
@@ -262,7 +262,9 @@
   }
 
   .contact-form-card .btn {
-    width: 100%;
+    align-self: center;
+    width: auto;
+    min-width: 180px;
   }
 }
 

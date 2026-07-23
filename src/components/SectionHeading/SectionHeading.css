@@ -17,3 +17,8 @@
   font-weight: 700;
   color: var(--text-primary);
 }
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+}

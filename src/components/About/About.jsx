@@ -1,6 +1,6 @@
 import "./About.css";
 
-import { BookOutlined } from "@ant-design/icons";
+import { BookOutlined, ReadOutlined } from "@ant-design/icons";
 
 import Card from "../Card/Card";
 import Section from "../Section/Section";
@@ -14,18 +14,22 @@ function About() {
       <div className="about">
         <div className="about-left">
           <p>
-            I'm a <strong>Frontend Engineer</strong> focused on building
-            scalable web applications with <strong>React.js</strong> and its
-            ecosystem. Over <strong>1.9 years</strong>, I've delivered features
-            across multi-role platforms—from URL-driven Redux state hydration to
-            responsive, API-driven user interfaces.
+            I'm a <strong>Frontend Engineer</strong> with{" "}
+            <strong>1.9 years of experience</strong> building scalable,
+            intuitive, and user-centric web applications using the{" "}
+            <strong>React </strong>
+            ecosystem. I've contributed to enterprise applications by developing
+            reusable component architectures, implementing role-based
+            dashboards, integrating REST APIs and third-party services, and
+            delivering responsive, high-performance user interfaces.
           </p>
 
           <p>
-            I enjoy building reusable component architectures, clean state
-            management, performance-focused applications, and intuitive user
-            experiences. I'm currently expanding my backend knowledge to grow as
-            a <strong>Full Stack Engineer</strong>.
+            I enjoy transforming complex business requirements into clean,
+            maintainable solutions while collaborating with cross-functional
+            teams to deliver reliable products. Passionate about continuous
+            learning, I'm currently expanding my backend expertise to grow as a{" "}
+            <strong>Full Stack Engineer</strong>.
           </p>
         </div>
 
@@ -33,7 +37,7 @@ function About() {
           <Card className="education-card">
             <div className="education-header">
               <div className="education-icon">
-                <BookOutlined />
+                <ReadOutlined />
               </div>
 
               <h3>Education</h3>
@@ -46,7 +50,7 @@ function About() {
             </p>
 
             <div className="education-footer">
-              <span className="cgpa">9.25</span>
+              <span className="cgpa">9.18</span>
 
               <span className="education-meta">CGPA • 2024</span>
             </div>

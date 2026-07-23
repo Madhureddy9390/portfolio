@@ -8,12 +8,11 @@
 .about-left {
   display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 
 .about-left p {
   font-size: 19px;
-  line-height: 1.9;
+  line-height: 1.7;
   color: var(--text-secondary);
 }
 
@@ -26,7 +25,7 @@
 =========================== */
 
 .education-card {
-  padding: 32px;
+  padding: 28px;
 }
 
 .education-header {
@@ -38,8 +37,8 @@
 }
 
 .education-icon {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 
   border-radius: 12px;
 
@@ -51,7 +50,7 @@
 
   color: var(--primary-color);
 
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .education-header h3 {
@@ -87,7 +86,7 @@
 }
 
 .cgpa {
-  font-size: 52px;
+  font-size: 48px;
 
   font-weight: 700;
 

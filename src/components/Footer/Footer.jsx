@@ -1,6 +1,7 @@
 import "./Footer.css";
 
 import {
+  FilePdfOutlined,
   GithubOutlined,
   LinkedinOutlined,
   MailOutlined,
@@ -22,9 +23,9 @@ function Footer() {
             <h4>{profile.role}</h4>
 
             <p>
-              Passionate Frontend Developer focused on building scalable,
-              responsive, and user-friendly web applications using modern
-              JavaScript technologies.
+              Frontend Engineer passionate about building scalable, responsive,
+              and user-friendly web applications with React, JavaScript, and
+              modern web technologies.
             </p>
           </div>
 
@@ -51,22 +52,35 @@ function Footer() {
               <PhoneOutlined />
               {profile.phone}
             </a>
-
-            <a href={profile.github} target="_blank" rel="noreferrer">
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit GitHub profile"
+            >
+              <LinkedinOutlined />
+              LinkedIn
+            </a>
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit GitHub profile"
+            >
               <GithubOutlined />
               GitHub
             </a>
 
-            <a href={profile.linkedin} target="_blank" rel="noreferrer">
-              <LinkedinOutlined />
-              LinkedIn
+            <a href={profile.resume} target="_blank" rel="noreferrer">
+              <FilePdfOutlined />
+              Resume
             </a>
           </div>
         </div>
 
         <div className="footer-bottom">
           <p>
-            © {year} {profile.name}. All Rights Reserved.
+            © {year} {profile.name}. Built with React.js
           </p>
         </div>
       </div>
