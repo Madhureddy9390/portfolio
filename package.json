@@ -12,6 +12,7 @@
   "dependencies": {
     "@ant-design/icons": "^6.3.2",
     "@emailjs/browser": "^4.4.1",
+    "@vercel/analytics": "^2.0.1",
     "antd": "^6.5.1",
     "framer-motion": "^12.42.2",
     "lucide-react": "^1.25.0",
