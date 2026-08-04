@@ -5,7 +5,7 @@ import "./AnimatedStatus.css";
 const statuses = [
   "Available for Opportunities",
   "Immediate Joiner",
-  "React Frontend Developer",
+  "Frontend Developer | React.js",
   "Open to Full-time Roles",
 ];
 
